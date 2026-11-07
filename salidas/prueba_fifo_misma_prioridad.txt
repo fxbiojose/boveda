@@ -1,0 +1,54 @@
+== Fase 1: lectura y validacion ==
+[LECTURA] 1 F01 LETRA A P2 - (linea fisica 2)
+[LECTURA] 2 F02 LETRA B P2 - (linea fisica 3)
+[LECTURA] 3 F03 PISTA - P2 REVELAR:F02 (linea fisica 4)
+[LECTURA] 4 F04 PISTA - P2 REVELAR:F01 (linea fisica 5)
+[LECTURA] 4 fichas validas
+
+######## VERSION MANUAL ########
+== Fase 2: lista enlazada ==
+[LISTA] insertar F01 (posicion 1)
+[LISTA] insertar F02 (posicion 2)
+[LISTA] insertar F03 (posicion 3)
+[LISTA] insertar F04 (posicion 4)
+[LISTA] recorrido: F01 -> F02 -> F03 -> F04
+== Fase 3: pila de delimitadores ==
+[PILA] vacia al terminar
+== Fase 4: colas de pistas ==
+[COLA P2] encolar F03 REVELAR:F02
+[COLA P2] encolar F04 REVELAR:F01
+== Fase 5: resolver pistas ==
+[COLA P2] desencolar F03 REVELAR:F02
+[LISTA] buscar F02 -> LETRA B
+[MENSAJE] B
+[COLA P2] desencolar F04 REVELAR:F01
+[LISTA] buscar F01 -> LETRA A
+[MENSAJE] BA
+[COLAS] vacias al terminar
+MENSAJE: BA
+
+######## VERSION JAVA.UTIL ########
+== Fase 2: lista enlazada ==
+[LISTA] insertar F01 (posicion 1)
+[LISTA] insertar F02 (posicion 2)
+[LISTA] insertar F03 (posicion 3)
+[LISTA] insertar F04 (posicion 4)
+[LISTA] recorrido: F01 -> F02 -> F03 -> F04
+== Fase 3: pila de delimitadores ==
+[PILA] vacia al terminar
+== Fase 4: colas de pistas ==
+[COLA P2] encolar F03 REVELAR:F02
+[COLA P2] encolar F04 REVELAR:F01
+== Fase 5: resolver pistas ==
+[COLA P2] desencolar F03 REVELAR:F02
+[LISTA] buscar F02 -> LETRA B
+[MENSAJE] B
+[COLA P2] desencolar F04 REVELAR:F01
+[LISTA] buscar F01 -> LETRA A
+[MENSAJE] BA
+[COLAS] vacias al terminar
+MENSAJE: BA
+
+######## COMPARACION ########
+Mensaje o primer error: IGUAL
+Orden de eventos (traza completa): IGUAL

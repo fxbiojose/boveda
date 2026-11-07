@@ -1,0 +1,4 @@
+id|tipo|valor|prioridad|instruccion
+F01|LETRA|S|1|-
+F02|LETRA|O|1|-
+F01|LETRA|L|1|-

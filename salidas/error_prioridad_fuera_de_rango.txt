@@ -1,0 +1,2 @@
+ERROR (fase 1, lectura): linea fisica 3, ficha F02 (posicion 2): prioridad invalida '4' (debe ser 1, 2 o 3)
+No se ejecutan las fases siguientes.

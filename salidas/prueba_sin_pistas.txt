@@ -1,0 +1,41 @@
+== Fase 1: lectura y validacion ==
+[LECTURA] 1 F01 ABRE { P1 - (linea fisica 2)
+[LECTURA] 2 F02 LETRA X P1 - (linea fisica 3)
+[LECTURA] 3 F03 CIERRA } P1 - (linea fisica 4)
+[LECTURA] 3 fichas validas
+
+######## VERSION MANUAL ########
+== Fase 2: lista enlazada ==
+[LISTA] insertar F01 (posicion 1)
+[LISTA] insertar F02 (posicion 2)
+[LISTA] insertar F03 (posicion 3)
+[LISTA] recorrido: F01 -> F02 -> F03
+== Fase 3: pila de delimitadores ==
+[PILA] apilar { (F01)
+[PILA] consultar tope: { (para el cierre F03)
+[PILA] retirar {
+[PILA] vacia al terminar
+== Fase 4: colas de pistas ==
+== Fase 5: resolver pistas ==
+[COLAS] vacias al terminar
+MENSAJE: 
+
+######## VERSION JAVA.UTIL ########
+== Fase 2: lista enlazada ==
+[LISTA] insertar F01 (posicion 1)
+[LISTA] insertar F02 (posicion 2)
+[LISTA] insertar F03 (posicion 3)
+[LISTA] recorrido: F01 -> F02 -> F03
+== Fase 3: pila de delimitadores ==
+[PILA] apilar { (F01)
+[PILA] consultar tope: { (para el cierre F03)
+[PILA] retirar {
+[PILA] vacia al terminar
+== Fase 4: colas de pistas ==
+== Fase 5: resolver pistas ==
+[COLAS] vacias al terminar
+MENSAJE: 
+
+######## COMPARACION ########
+Mensaje o primer error: IGUAL
+Orden de eventos (traza completa): IGUAL

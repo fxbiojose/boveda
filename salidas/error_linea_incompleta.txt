@@ -1,0 +1,2 @@
+ERROR (fase 1, lectura): linea fisica 3, posicion 2: se esperaban 5 campos y hay 4
+No se ejecutan las fases siguientes.

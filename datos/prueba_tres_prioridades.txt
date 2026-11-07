@@ -1,0 +1,9 @@
+id|tipo|valor|prioridad|instruccion
+F01|ABRE|(|1|-
+F02|LETRA|L|1|-
+F03|LETRA|S|2|-
+F04|LETRA|O|3|-
+F05|CIERRA|)|1|-
+F06|PISTA|-|3|REVELAR:F02
+F07|PISTA|-|1|REVELAR:F03
+F08|PISTA|-|2|REVELAR:F04

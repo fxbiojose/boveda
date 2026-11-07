@@ -1,0 +1,65 @@
+== Fase 1: lectura y validacion ==
+[LECTURA] 1 F01 LETRA S P2 - (linea fisica 2)
+[LECTURA] 2 F02 LETRA L P2 - (linea fisica 3)
+[LECTURA] 3 F03 LETRA O P2 - (linea fisica 4)
+[LECTURA] 4 F04 PISTA - P2 ENCADENAR:F01:F02 (linea fisica 5)
+[LECTURA] 5 F05 PISTA - P2 REVELAR:F03 (linea fisica 6)
+[LECTURA] 5 fichas validas
+
+######## VERSION MANUAL ########
+== Fase 2: lista enlazada ==
+[LISTA] insertar F01 (posicion 1)
+[LISTA] insertar F02 (posicion 2)
+[LISTA] insertar F03 (posicion 3)
+[LISTA] insertar F04 (posicion 4)
+[LISTA] insertar F05 (posicion 5)
+[LISTA] recorrido: F01 -> F02 -> F03 -> F04 -> F05
+== Fase 3: pila de delimitadores ==
+[PILA] vacia al terminar
+== Fase 4: colas de pistas ==
+[COLA P2] encolar F04 ENCADENAR:F01:F02
+[COLA P2] encolar F05 REVELAR:F03
+== Fase 5: resolver pistas ==
+[COLA P2] desencolar F04 ENCADENAR:F01:F02
+[LISTA] buscar F01 -> LETRA S
+[MENSAJE] S
+[COLA P2] encolar REVELAR:F02 (generada por F04)
+[COLA P2] desencolar F05 REVELAR:F03
+[LISTA] buscar F03 -> LETRA O
+[MENSAJE] SO
+[COLA P2] desencolar REVELAR:F02 (generada por F04)
+[LISTA] buscar F02 -> LETRA L
+[MENSAJE] SOL
+[COLAS] vacias al terminar
+MENSAJE: SOL
+
+######## VERSION JAVA.UTIL ########
+== Fase 2: lista enlazada ==
+[LISTA] insertar F01 (posicion 1)
+[LISTA] insertar F02 (posicion 2)
+[LISTA] insertar F03 (posicion 3)
+[LISTA] insertar F04 (posicion 4)
+[LISTA] insertar F05 (posicion 5)
+[LISTA] recorrido: F01 -> F02 -> F03 -> F04 -> F05
+== Fase 3: pila de delimitadores ==
+[PILA] vacia al terminar
+== Fase 4: colas de pistas ==
+[COLA P2] encolar F04 ENCADENAR:F01:F02
+[COLA P2] encolar F05 REVELAR:F03
+== Fase 5: resolver pistas ==
+[COLA P2] desencolar F04 ENCADENAR:F01:F02
+[LISTA] buscar F01 -> LETRA S
+[MENSAJE] S
+[COLA P2] encolar REVELAR:F02 (generada por F04)
+[COLA P2] desencolar F05 REVELAR:F03
+[LISTA] buscar F03 -> LETRA O
+[MENSAJE] SO
+[COLA P2] desencolar REVELAR:F02 (generada por F04)
+[LISTA] buscar F02 -> LETRA L
+[MENSAJE] SOL
+[COLAS] vacias al terminar
+MENSAJE: SOL
+
+######## COMPARACION ########
+Mensaje o primer error: IGUAL
+Orden de eventos (traza completa): IGUAL

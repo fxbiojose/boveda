@@ -1,0 +1,2 @@
+ERROR (fase 1, lectura): linea fisica 4, ficha F01 (posicion 3): identificador repetido
+No se ejecutan las fases siguientes.

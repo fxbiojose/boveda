@@ -1,0 +1,2 @@
+ERROR (fase 1, lectura): linea fisica 3, ficha F02 (posicion 2): tipo invalido 'NUMERO' (debe ser ABRE, CIERRA, LETRA o PISTA)
+No se ejecutan las fases siguientes.

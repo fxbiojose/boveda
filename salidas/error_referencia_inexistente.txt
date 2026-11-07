@@ -1,0 +1,36 @@
+== Fase 1: lectura y validacion ==
+[LECTURA] 1 F01 LETRA S P1 - (linea fisica 2)
+[LECTURA] 2 F02 PISTA - P1 REVELAR:F99 (linea fisica 3)
+[LECTURA] 2 fichas validas
+
+######## VERSION MANUAL ########
+== Fase 2: lista enlazada ==
+[LISTA] insertar F01 (posicion 1)
+[LISTA] insertar F02 (posicion 2)
+[LISTA] recorrido: F01 -> F02
+== Fase 3: pila de delimitadores ==
+[PILA] vacia al terminar
+== Fase 4: colas de pistas ==
+[COLA P1] encolar F02 REVELAR:F99
+== Fase 5: resolver pistas ==
+[COLA P1] desencolar F02 REVELAR:F99
+[LISTA] buscar F99 -> no existe
+ERROR (fase 5, pistas): linea fisica 3, ficha F02 (posicion 2): la referencia F99 no existe
+
+######## VERSION JAVA.UTIL ########
+== Fase 2: lista enlazada ==
+[LISTA] insertar F01 (posicion 1)
+[LISTA] insertar F02 (posicion 2)
+[LISTA] recorrido: F01 -> F02
+== Fase 3: pila de delimitadores ==
+[PILA] vacia al terminar
+== Fase 4: colas de pistas ==
+[COLA P1] encolar F02 REVELAR:F99
+== Fase 5: resolver pistas ==
+[COLA P1] desencolar F02 REVELAR:F99
+[LISTA] buscar F99 -> no existe
+ERROR (fase 5, pistas): linea fisica 3, ficha F02 (posicion 2): la referencia F99 no existe
+
+######## COMPARACION ########
+Mensaje o primer error: IGUAL
+Orden de eventos (traza completa): IGUAL

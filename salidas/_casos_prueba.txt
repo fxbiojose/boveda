@@ -1,0 +1,52 @@
+== Estructuras propias (pruebas aisladas) ==
+[OK]    lista: nueva esta vacia (tamanio 0)
+[OK]    lista: buscar en vacia devuelve null
+[OK]    lista: tamanio 3 tras tres inserciones
+[OK]    lista: primera es F01
+[OK]    lista: buscar F03 la encuentra
+[OK]    lista: buscar F99 devuelve null
+[OK]    lista: el recorrido respeta el orden de insercion
+[OK]    lista: primera en vacia lanza excepcion
+[OK]    pila: nueva esta vacia
+[OK]    pila: consultar devuelve el tope sin retirarlo
+[OK]    pila: retirar respeta LIFO (primero [)
+[OK]    pila: retirar respeta LIFO (luego ()
+[OK]    pila: queda vacia
+[OK]    pila: retirar en vacia lanza excepcion
+[OK]    cola: nueva esta vacia
+[OK]    cola: sale P1, luego P2, luego P3 y FIFO dentro de cada una
+[OK]    cola: prioridad fuera de 1-3 lanza excepcion
+[OK]    cola: desencolar en vacia lanza excepcion
+== Archivos de entrada (version manual y version java.util) ==
+[OK]    ejemplo_valido.txt: mensaje 'SOL' en la version manual
+[OK]    ejemplo_valido.txt: la version java.util produce la misma traza
+[OK]    prueba_tres_prioridades.txt: mensaje 'SOL' en la version manual
+[OK]    prueba_tres_prioridades.txt: la version java.util produce la misma traza
+[OK]    prueba_fifo_misma_prioridad.txt: mensaje 'BA' en la version manual
+[OK]    prueba_fifo_misma_prioridad.txt: la version java.util produce la misma traza
+[OK]    prueba_encadenar_cola_con_pistas.txt: mensaje 'SOL' en la version manual
+[OK]    prueba_encadenar_cola_con_pistas.txt: la version java.util produce la misma traza
+[OK]    prueba_sin_pistas.txt: mensaje '' en la version manual
+[OK]    prueba_sin_pistas.txt: la version java.util produce la misma traza
+[OK]    error_cierre_incorrecto.txt: primer error en fase 3, pila
+[OK]    error_cierre_incorrecto.txt: la version java.util produce la misma traza y el mismo error
+[OK]    error_cierre_sin_apertura.txt: primer error en fase 3, pila
+[OK]    error_cierre_sin_apertura.txt: la version java.util produce la misma traza y el mismo error
+[OK]    error_apertura_sobrante.txt: primer error en fase 3, pila
+[OK]    error_apertura_sobrante.txt: la version java.util produce la misma traza y el mismo error
+[OK]    error_id_repetido.txt: primer error en fase 1, lectura
+[OK]    error_id_repetido.txt: la version java.util produce la misma traza y el mismo error
+[OK]    error_linea_incompleta.txt: primer error en fase 1, lectura
+[OK]    error_linea_incompleta.txt: la version java.util produce la misma traza y el mismo error
+[OK]    error_tipo_invalido.txt: primer error en fase 1, lectura
+[OK]    error_tipo_invalido.txt: la version java.util produce la misma traza y el mismo error
+[OK]    error_prioridad_fuera_de_rango.txt: primer error en fase 1, lectura
+[OK]    error_prioridad_fuera_de_rango.txt: la version java.util produce la misma traza y el mismo error
+[OK]    error_referencia_inexistente.txt: primer error en fase 5, pistas
+[OK]    error_referencia_inexistente.txt: la version java.util produce la misma traza y el mismo error
+[OK]    error_referencia_no_letra.txt: primer error en fase 5, pistas
+[OK]    error_referencia_no_letra.txt: la version java.util produce la misma traza y el mismo error
+[OK]    error_letra_repetida.txt: primer error en fase 5, pistas
+[OK]    error_letra_repetida.txt: la version java.util produce la misma traza y el mismo error
+
+Resumen: 48 pasaron, 0 fallaron
